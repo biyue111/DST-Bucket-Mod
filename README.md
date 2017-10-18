@@ -1,6 +1,8 @@
 # DST-Bucket-Mod
 Bucket mod for Don't Starve Together
 
+## Basic Information
+
 **Name**: Bucket
 
 **Crafting**:
@@ -27,6 +29,8 @@ Bucket mod for Don't Starve Together
     
 **Debug Spawn**:
     "bucket"
+    
+## Coding
 
 **Variable**: 
 
@@ -35,14 +39,14 @@ Bucket mod for Don't Starve Together
 
 ## Planned Feature(s)
 
-    *************
-    Golden bucket
-    Golden bucket with diamonds
-    Stone bucket
-    *************
+* Stone bucket
+* Golden bucket
+* Gemmy Golden bucket
     
-## Useful Link(s)
+## Useful Links
  
-    [IDE](https://forums.kleientertainment.com/topic/78739-dsted-the-ide-for-dont-starve-together/)
-    [Tutorial: Using Template](https://forums.kleientertainment.com/topic/46849-tutorial-using-extended-sample-character-template/)
-    [Mods & tools](https://forums.kleientertainment.com/forum/26-dont-starve-mods-and-tools/)
+[IDE](https://forums.kleientertainment.com/topic/78739-dsted-the-ide-for-dont-starve-together/)
+
+[Tutorial: Using Template](https://forums.kleientertainment.com/topic/46849-tutorial-using-extended-sample-character-template/)
+
+[Mods & tools](https://forums.kleientertainment.com/forum/26-dont-starve-mods-and-tools/)
