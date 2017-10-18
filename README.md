@@ -49,4 +49,6 @@ Bucket mod for Don't Starve Together
 
 [Tutorial: Using Template](https://forums.kleientertainment.com/topic/46849-tutorial-using-extended-sample-character-template/)
 
-[Mods & tools](https://forums.kleientertainment.com/forum/26-dont-starve-mods-and-tools/)
+[Mods & Tools](https://forums.kleientertainment.com/forum/26-dont-starve-mods-and-tools/)
+
+[Langague Lua Tutorial](http://www.runoob.com/lua/lua-tutorial.html)
