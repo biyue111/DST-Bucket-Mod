@@ -33,7 +33,7 @@ Bucket mod for Don't Starve Together
     State (min = 0%, max = 100%, by = 25%)
     Durability (min = 0%, max = 100%, by = 5%)
 
-**Planned Feature(s)**:
+## Planned Feature(s)
 
     *************
     Golden bucket
@@ -41,8 +41,8 @@ Bucket mod for Don't Starve Together
     Stone bucket
     *************
     
- **Useful Link(s)**:
+## Useful Link(s)
  
-    https://forums.kleientertainment.com/topic/78739-dsted-the-ide-for-dont-starve-together/
-    https://forums.kleientertainment.com/topic/46849-tutorial-using-extended-sample-character-template/
-    https://forums.kleientertainment.com/forum/26-dont-starve-mods-and-tools/
+    [IDE](https://forums.kleientertainment.com/topic/78739-dsted-the-ide-for-dont-starve-together/)
+    [Tutorial: Using Template](https://forums.kleientertainment.com/topic/46849-tutorial-using-extended-sample-character-template/)
+    [Mods & tools](https://forums.kleientertainment.com/forum/26-dont-starve-mods-and-tools/)
