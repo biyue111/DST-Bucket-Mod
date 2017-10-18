@@ -40,3 +40,9 @@ Bucket mod for Don't Starve Together
     Golden bucket with diamonds
     Stone bucket
     *************
+    
+ **Useful Link(s)**:
+ 
+    https://forums.kleientertainment.com/topic/78739-dsted-the-ide-for-dont-starve-together/
+    https://forums.kleientertainment.com/topic/46849-tutorial-using-extended-sample-character-template/
+    https://forums.kleientertainment.com/forum/26-dont-starve-mods-and-tools/
