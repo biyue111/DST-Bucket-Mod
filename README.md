@@ -56,3 +56,5 @@ Bucket mod for Don't Starve Together
 [Modding Guide](https://forums.kleientertainment.com/topic/27341-tutorial-the-artists-guide-to-characteritem-modding/)
 
 [Getting Started](https://forums.kleientertainment.com/topic/28021-getting-started-guides-tutorials-and-examples/)
+
+[Lua Tutorial](http://www.runoob.com/lua/lua-tutorial.html)
