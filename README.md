@@ -49,6 +49,9 @@ Bucket mod for Don't Starve Together
 
 * [Tutorial by rezecib: Getting Start](https://forums.kleientertainment.com/topic/47353-guide-getting-started-with-modding-dst-and-some-general-tips-for-ds-as-well/#StartWithAnotherMod)
 
+* [Wots The Diff?? Prefabs, Components, Stategraphs, And Brains](https://forums.kleientertainment.com/topic/25850-wots-the-diff-prefabs-components-stategraphs-and-brains/)
+A brief introduction to the file structure of DST codes
+
 * [Tutorial: Using Template](https://forums.kleientertainment.com/topic/46849-tutorial-using-extended-sample-character-template/)
 
 * [Mods & Tools](https://forums.kleientertainment.com/forum/26-dont-starve-mods-and-tools/)
