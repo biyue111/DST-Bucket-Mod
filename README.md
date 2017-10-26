@@ -10,7 +10,7 @@ Bucket mod for Don't Starve Together
     Rope * 1
 
 **Tab**:
-    Survival
+    Survival
 
 **Tier**:
     Always available
@@ -45,16 +45,19 @@ Bucket mod for Don't Starve Together
     
 ## Useful Links
  
-[IDE](https://forums.kleientertainment.com/topic/78739-dsted-the-ide-for-dont-starve-together/)
+* [IDE](https://forums.kleientertainment.com/topic/78739-dsted-the-ide-for-dont-starve-together/)
 
-[Tutorial: Using Template](https://forums.kleientertainment.com/topic/46849-tutorial-using-extended-sample-character-template/)
+* [Tutorial by rezecib: Getting Start](https://forums.kleientertainment.com/topic/47353-guide-getting-started-with-modding-dst-and-some-general-tips-for-ds-as-well/#StartWithAnotherMod)
 
-[Mods & Tools](https://forums.kleientertainment.com/forum/26-dont-starve-mods-and-tools/)
+* [Tutorial: Using Template](https://forums.kleientertainment.com/topic/46849-tutorial-using-extended-sample-character-template/)
 
-[Langague Lua Tutorial](http://www.runoob.com/lua/lua-tutorial.html)
+* [Mods & Tools](https://forums.kleientertainment.com/forum/26-dont-starve-mods-and-tools/)
 
-[Modding Guide](https://forums.kleientertainment.com/topic/27341-tutorial-the-artists-guide-to-characteritem-modding/)
+* [Langague Lua Tutorial](http://www.runoob.com/lua/lua-tutorial.html)
 
-[Getting Started](https://forums.kleientertainment.com/topic/28021-getting-started-guides-tutorials-and-examples/)
+* [Modding Guide](https://forums.kleientertainment.com/topic/27341-tutorial-the-artists-guide-to-characteritem-modding/)
 
-[Lua Tutorial](http://www.runoob.com/lua/lua-tutorial.html)
+* [Getting Started: Guides, Tutorials and Examples](https://forums.kleientertainment.com/topic/28021-getting-started-guides-tutorials-and-examples/)
+This link shows a list of DS and DST modding guides, including Getting Started, Art, Creature etc.
+
+* [Lua Tutorial](http://www.runoob.com/lua/lua-tutorial.html)
