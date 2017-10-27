@@ -1,21 +1,21 @@
-# DST-PigTown-Mod
-PigTown mod for Don't Starve Together
+# DST-PigVillage-Mod
+PigVillage mod for Don't Starve Together
 
 ## Basic Information
 
-**Name**: PigTown
+**Name**: PigVillage
 
 **Tab**: Creature, Item
 
-**Description**: A town including creatures extended from "pigman". The compotenment of pigmans in this mod is more complexe and more interactive. For example, players can sell items to and buy items from a merchant pigman. Soldier pigman provide hirable soldier for players. The details of added features are presented in the section List of Features.
+**Description**: A village including creatures extended from "pigman". The compotenment of pigman in this mod is more complexe and more interactive. For example, players can sell items to and buy items from a merchant pigman. Soldier pigman provide hirable soldier for players. The details of added features are presented in the section List of Features.
 
 ## List of Features
 ### Creatures
-* **Normal Pigman**: The normal inhabitant of Pigtown.
-* **Soldier Pigman**: A soldier pigman could be hired or nature generated. Player can hire mercenaries from nature generated soldier pigman. Soldier pigman are loyaler than pigman in vanilla game.
+* **Villager Pigman**: The normal inhabitant of pig village.
+* **Soldier Pigman**: A soldier pigman could be hired or nature generated. They are armed and fight for the peace of pigtown, also for gold. Player can hire mercenaries from nature generated soldier pigman with two pieces of gold. Soldier pigman are loyaler than pigman in vanilla game. They will not return home on night. Once paid, They will always follow you.
 * **Merchant Pigman**: 
 ### Items
-* Spear of command: A spear made of gold and it can command hired soldier pigman. 
+* **Spear of command**: A spear made of gold. It can commands hired soldier pigman. 
     
 ## Useful Links
  
