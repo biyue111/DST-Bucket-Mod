@@ -5,14 +5,17 @@ PigTown mod for Don't Starve Together
 
 **Name**: PigTown
 
-**Description**: A town including creatures extended from "pigman"
+**Tab**: Creature, Item
 
-**Tab**: Creature(s)
+**Description**: A town including creatures extended from "pigman". The compotenment of pigmans in this mod is more complexe and more interactive. For example, players can sell items to and buy items from a merchant pigman. Soldier pigman provide hirable soldier for players. The details of added features are presented in the section List of Features.
 
-## List:
-* Normal Pigman
-* Soldier Pigman
-* Merchant Pigman
+## List of Features
+### Creatures
+* **Normal Pigman**: The normal inhabitant of Pigtown.
+* **Soldier Pigman**: A soldier pigman could be hired or nature generated. Player can hire mercenaries from nature generated soldier pigman. Soldier pigman are loyaler than pigman in vanilla game.
+* **Merchant Pigman**: 
+### Items
+* Spear of command: A spear made of gold and it can command hired soldier pigman. 
     
 ## Useful Links
  
