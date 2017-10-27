@@ -1,3 +1,3 @@
 PrefabFiles = {
-    "normalpigman"
+    "villagerpigman"
 }

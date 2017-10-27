@@ -1,6 +1,6 @@
 -- This information tells other players more about the mod
-name = "Pigman Extended"
-description = "The last test of Normal pigman"
+name = "PigVillage"
+description = "If you have gold, you are welcome to our village"
 author = "BiYue and Remi"
 version = "0.0"
 
