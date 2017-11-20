@@ -29,10 +29,8 @@ PigVillage mod for Don't Starve Together
 
 * [Mods & Tools](https://forums.kleientertainment.com/forum/26-dont-starve-mods-and-tools/)
 
-* [Langague Lua Tutorial](http://www.runoob.com/lua/lua-tutorial.html)
+* [Lua Tutorial](http://www.runoob.com/lua/lua-tutorial.html)
 
 * [Modding Guide](https://forums.kleientertainment.com/topic/27341-tutorial-the-artists-guide-to-characteritem-modding/)
 
 * [Modding Guides: Getting Started, Art and Creature](https://forums.kleientertainment.com/topic/28021-getting-started-guides-tutorials-and-examples/)
-
-* [Lua Tutorial](http://www.runoob.com/lua/lua-tutorial.html)
