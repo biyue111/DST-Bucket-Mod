@@ -1,3 +1,4 @@
 PrefabFiles = {
-    "villagerpigman"
+    "villagerpigman",
+	"soldierpigman"
 }
