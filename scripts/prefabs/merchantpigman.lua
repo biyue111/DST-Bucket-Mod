@@ -137,6 +137,8 @@ local function fn()
 
     inst.DynamicShadow:SetSize(1.5, .75)
     inst.Transform:SetFourFaced()
+    
+    MakeObstaclePhysics(inst, 1, .5)
 
     --inst.Transform:SetScale(1.5, 1.5, 1.5)
 
