@@ -19,6 +19,8 @@ PigVillage mod for Don't Starve Together
     
 ## Useful Links
  
+* [DS Wiki](http://dontstarve.wikia.com/wiki/Don%27t_Starve_Wiki) , [DST Console Commands](http://dontstarve.wikia.com/wiki/Console/Don%27t_Starve_Together_Commands)
+
 * [IDE](https://forums.kleientertainment.com/topic/78739-dsted-the-ide-for-dont-starve-together/)
 
 * [Tutorial by rezecib: Getting Start](https://forums.kleientertainment.com/topic/47353-guide-getting-started-with-modding-dst-and-some-general-tips-for-ds-as-well/#StartWithAnotherMod)
