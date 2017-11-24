@@ -37,7 +37,7 @@ end
 
 local function CalcSanityAura(inst, observer)
     return (inst.prefab == "moonpig" and -TUNING.SANITYAURA_LARGE)
-        or (inst.components.werebeast ~= nil and inst.components.werebeast:IsInWereState() and -TUNING.SANITYAURA_LARGE)
+        or (inst.components.werebeastforsoldier ~= nil and inst.components.werebeastforsoldier:IsInWereState() and -TUNING.SANITYAURA_LARGE)
         or (inst.components.follower ~= nil and inst.components.follower.leader == observer and TUNING.SANITYAURA_SMALL)
         or 0
 end
@@ -128,10 +128,10 @@ local function OnEat(inst, food)
         if food.components.edible.foodtype == FOODTYPE.VEGGIE then
             SpawnPrefab("poop").Transform:SetPosition(inst.Transform:GetWorldPosition())
         elseif food.components.edible.foodtype == FOODTYPE.MEAT and
-            inst.components.werebeast ~= nil and
-            not inst.components.werebeast:IsInWereState() and
+            inst.components.werebeastforsoldier ~= nil and
+            not inst.components.werebeastforsoldier:IsInWereState() and
             food.components.edible:GetHealth(inst) < 0 then
-            inst.components.werebeast:TriggerDelta(100)
+            inst.components.werebeastforsoldier:TriggerDelta(100)
         end
     end
 end
@@ -476,7 +476,7 @@ end
 local function OnLoad(inst, data)
     if data ~= nil then
         inst.build = data.build or builds[1]
-        if not inst.components.werebeast:IsInWereState() then
+        if not inst.components.werebeastforsoldier:IsInWereState() then
             inst.AnimState:SetBuild(inst.build)
         end
     end
@@ -486,7 +486,7 @@ local function CustomOnHaunt(inst)
     if not inst:HasTag("werepig") and math.random() <= TUNING.HAUNT_CHANCE_OCCASIONAL then
         local remainingtime = TUNING.TOTAL_DAY_TIME * (1 - TheWorld.state.time)
         local mintime = TUNING.SEG_TIME
-        inst.components.werebeast:SetWere(math.max(mintime, remainingtime) + math.random() * TUNING.SEG_TIME)
+        inst.components.werebeastforsoldier:SetWere(math.max(mintime, remainingtime) + math.random() * TUNING.SEG_TIME)
         inst.components.hauntable.hauntvalue = TUNING.HAUNT_LARGE
     end
 end
@@ -580,9 +580,9 @@ local function common(moonbeast)
     MakeHauntablePanic(inst)
 
     if not moonbeast then
-        inst:AddComponent("werebeast")
-        inst.components.werebeast:SetOnWereFn(SetWerePig)
-        inst.components.werebeast:SetTriggerLimit(1)
+        inst:AddComponent("werebeastforsoldier")
+        inst.components.werebeastforsoldier:SetOnWereFn(SetWerePig)
+        inst.components.werebeastforsoldier:SetTriggerLimit(1)
 
         AddHauntableCustomReaction(inst, CustomOnHaunt, true, nil, true)
     end
@@ -650,7 +650,7 @@ local function normal()
 
     inst.build = builds[math.random(#builds)]
     inst.AnimState:SetBuild(inst.build)
-    inst.components.werebeast:SetOnNormalFn(SetNormalPig)
+    inst.components.werebeastforsoldier:SetOnNormalFn(SetNormalPig)
     SetNormalPig(inst)
     return inst
 end
@@ -664,7 +664,7 @@ local function guard()
 
     inst.build = guardbuilds[math.random(#guardbuilds)]
     inst.AnimState:SetBuild(inst.build)
-    inst.components.werebeast:SetOnNormalFn(SetGuardPig)
+    inst.components.werebeastforsoldier:SetOnNormalFn(SetGuardPig)
     SetGuardPig(inst)
     return inst
 end
