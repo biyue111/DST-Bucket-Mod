@@ -36,5 +36,3 @@ PigVillage mod for Don't Starve Together
 * [Modding Guide](https://forums.kleientertainment.com/topic/27341-tutorial-the-artists-guide-to-characteritem-modding/)
 
 * [Modding Guides: Getting Started, Art and Creature](https://forums.kleientertainment.com/topic/28021-getting-started-guides-tutorials-and-examples/)
-
-* [Don't starve Wiki](http://dontstarve.wikia.com/wiki/Don%27t_Starve_Wiki)
