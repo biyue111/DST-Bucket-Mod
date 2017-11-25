@@ -28,7 +28,7 @@ local function launchitem(item, giver, angle)
 end
 
 local function ontradeforgold(inst, item, giver)
-    inst.SoundEmitter:PlaySound("dontstarve/pig/PigKingThrowGold")
+    inst.SoundEmitter:PlaySound("dontstarve/pig/oink")
 
     local x, y, z = inst.Transform:GetWorldPosition()
     y = 4.5
@@ -78,7 +78,9 @@ local function ontradeforgold(inst, item, giver)
             candy.Transform:SetPosition(x, y, z)
             launchitem(candy, giver, angle)
         end
-    end    
+    end
+    inst.AnimState:PlayAnimation("idle_happy")
+    inst.AnimState:PushAnimation("idle_loop", true)    
 end
 
 local function onplayhappysound(inst)
@@ -106,6 +108,8 @@ end
 
 local function OnRefuseItem(inst, giver, item)
     inst.SoundEmitter:PlaySound("dontstarve/pig/PigKingReject")
+    inst:FacePoint(giver:GetPosition())    
+    inst.AnimState:PlayAnimation("pig_reject")
     inst.happy = false
 end
 
@@ -148,6 +152,10 @@ local function fn()
     inst.AnimState:PlayAnimation("idle_loop", true)
     inst.AnimState:Hide("hat")
     inst.AnimState:SetBuild("pig_build")
+    
+    inst:AddComponent("locomotor") -- locomotor must be constructed before the stategraph
+    inst.components.locomotor.runspeed = TUNING.PIG_RUN_SPEED --5
+    inst.components.locomotor.walkspeed = TUNING.PIG_WALK_SPEED --3
 
     --trader (from trader component) added to pristine state for optimization
     inst:AddTag("trader")
@@ -184,6 +192,8 @@ local function fn()
         end
         return false
     end)
+  
+--    inst:SetStateGraph("SGpig")
   
     inst:AddComponent("inventory")
     local tophat = SpawnPrefab("tophat")
