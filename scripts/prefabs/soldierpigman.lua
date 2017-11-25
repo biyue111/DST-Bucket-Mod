@@ -175,15 +175,20 @@ local function OnAttacked(inst, data)
     if attacker.prefab == "deciduous_root" and attacker.owner ~= nil then 
         OnAttackedByDecidRoot(inst, attacker.owner)
     elseif attacker.prefab ~= "deciduous_root" then
-        inst.components.combat:SetTarget(attacker)
+		if attacker.components.follower == nil or -- Not the same leader
+			inst.components.follower == nil or
+			attacker.components.follower.leader ~= inst.components.follower.leader then
+			
+			inst.components.combat:SetTarget(attacker)
 
-        if inst:HasTag("werepig") then
-            inst.components.combat:ShareTarget(attacker, SHARE_TARGET_DIST, IsWerePig, MAX_TARGET_SHARES)
-        elseif inst:HasTag("guard") then
-            inst.components.combat:ShareTarget(attacker, SHARE_TARGET_DIST, attacker:HasTag("pig") and IsGuardPig or IsPig, MAX_TARGET_SHARES)
-        elseif not (attacker:HasTag("pig") and attacker:HasTag("guard")) then
-            inst.components.combat:ShareTarget(attacker, SHARE_TARGET_DIST, IsNonWerePig, MAX_TARGET_SHARES)
-        end
+			if inst:HasTag("werepig") then
+				inst.components.combat:ShareTarget(attacker, SHARE_TARGET_DIST, IsWerePig, MAX_TARGET_SHARES)
+			elseif inst:HasTag("guard") then
+				inst.components.combat:ShareTarget(attacker, SHARE_TARGET_DIST, attacker:HasTag("pig") and IsGuardPig or IsPig, MAX_TARGET_SHARES)
+			elseif not (attacker:HasTag("pig") and attacker:HasTag("guard")) then
+				inst.components.combat:ShareTarget(attacker, SHARE_TARGET_DIST, IsNonWerePig, MAX_TARGET_SHARES)
+			end
+		end
     end
 end
 
@@ -213,9 +218,13 @@ end
 
 local function NormalKeepTargetFn(inst, target)
     --give up on dead guys, or guys in the dark, or werepigs
+	--give up when under the same leader
     return inst.components.combat:CanTarget(target)
         and (target.LightWatcher == nil or target.LightWatcher:IsInLight())
         and not (target.sg ~= nil and target.sg:HasStateTag("transform"))
+		and (target.components.follower == nil or -- Not the same leader
+			inst.components.follower == nil or
+			target.components.follower.leader ~= inst.components.follower.leader)
 end
 
 local function NormalShouldSleep(inst)
