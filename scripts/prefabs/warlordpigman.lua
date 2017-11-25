@@ -28,7 +28,7 @@ local function launchitem(item, giver, angle)
 end
 
 local function ontradeforgold(inst, item, giver)
-    inst.SoundEmitter:PlaySound("dontstarve/pig/PigKingThrowGold")
+    inst.SoundEmitter:PlaySound("dontstarve/pig/attack")
 
 --    local x, y, z = inst.Transform:GetWorldPosition()
 --    y = 4.5
@@ -62,6 +62,8 @@ local function ontradeforgold(inst, item, giver)
         and TUNING.PIG_LOYALTY_MAXTIME + TUNING.PIG_LOYALTY_POLITENESS_MAXTIME_BONUS
         or TUNING.PIG_LOYALTY_MAXTIME
 	end
+  inst.AnimState:PlayAnimation("idle_angry")
+  inst.AnimState:PushAnimation("idle_loop", true)
 
 --    if item.components.tradable.tradefor ~= nil then
 --        for _, v in pairs(item.components.tradable.tradefor) do
@@ -124,12 +126,15 @@ end
 local function OnRefuseItem(inst, giver, item)
     inst.SoundEmitter:PlaySound("dontstarve/pig/PigKingReject")
     inst.happy = false
+    inst:FacePoint(giver:GetPosition())
+    inst.AnimState:PlayAnimation("pig_reject")
+    inst.AnimState:PushAnimation("idle_loop", true)
 end
 
 local function AcceptTest(inst, item)
     local is_event_item = IsSpecialEventActive(SPECIAL_EVENTS.HALLOWED_NIGHTS) and item.components.tradable.halloweencandyvalue and item.components.tradable.halloweencandyvalue > 0
 	local is_goldnugget = item.components.edible.foodtype == FOODTYPE.ELEMENTAL and item.components.edible.hungervalue == 2
-    return item.components.tradable.goldvalue > 0 or is_event_item or is_goldnugget
+    return is_event_item or is_goldnugget --or item.components.tradable.goldvalue > 0 
 end
 
 --local function OnIsNight(inst, isnight)
