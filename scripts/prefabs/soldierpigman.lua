@@ -589,7 +589,7 @@ local function common(moonbeast)
 
     ------------------------------------------
     inst:AddComponent("follower")
-    inst.components.follower.maxfollowtime = 0 --TUNING.PIG_LOYALTY_MAXTIME
+    inst.components.follower.maxfollowtime = TUNING.PIG_LOYALTY_MAXTIME
     ------------------------------------------
 
     inst:AddComponent("inventory")

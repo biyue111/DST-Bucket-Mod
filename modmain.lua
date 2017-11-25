@@ -1,5 +1,6 @@
 PrefabFiles = {
     "villagerpigman",
 	"soldierpigman",
-	"merchantpigman"
+	"merchantpigman",
+	"warlordpigman"
 }
