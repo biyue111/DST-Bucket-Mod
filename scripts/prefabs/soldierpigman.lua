@@ -175,9 +175,7 @@ local function OnAttacked(inst, data)
     if attacker.prefab == "deciduous_root" and attacker.owner ~= nil then 
         OnAttackedByDecidRoot(inst, attacker.owner)
     elseif attacker.prefab ~= "deciduous_root" then
-		if attacker.components.follower == nil or -- Not the same leader
-			inst.components.follower == nil or
-			attacker.components.follower.leader ~= inst.components.follower.leader then
+		if not (inst.components.follower ~= nil and inst.components.follower:IsLeaderSame(attacker) ) then -- ignore friend fire
 			
 			inst.components.combat:SetTarget(attacker)
 
@@ -222,9 +220,7 @@ local function NormalKeepTargetFn(inst, target)
     return inst.components.combat:CanTarget(target)
         and (target.LightWatcher == nil or target.LightWatcher:IsInLight())
         and not (target.sg ~= nil and target.sg:HasStateTag("transform"))
-		and (target.components.follower == nil or -- Not the same leader
-			inst.components.follower == nil or
-			target.components.follower.leader ~= inst.components.follower.leader)
+		and not (inst.components.follower ~= nil and inst.components.follower:IsLeaderSame(target)) -- Not the same leader
 end
 
 local function NormalShouldSleep(inst)
