@@ -14,8 +14,9 @@ PigVillage mod for Don't Starve Together
 * **Villager Pigman**: The normal inhabitant of pig village.
 * **Soldier Pigman**: A soldier pigman could be hired or nature generated. They are armed and fight for the peace of pigtown, also for gold. Player can hire mercenaries from nature generated soldier pigman with two pieces of gold. Soldier pigman are loyaler than pigman in vanilla game. They will not return home on night. Once paid, They will always follow you.
 * **Merchant Pigman**: Trade with players in way like pigking for instant.
+* **Warlord Pigman**: Players can hire soldier pigman from this NPC.
 ### Items
-* **Spear of command**: A spear made of gold. It can commands hired soldier pigman. 
+* **Command Staff**: A spear made of gold. It can commands hired soldier pigman. 
     
 ## Useful Links
  
